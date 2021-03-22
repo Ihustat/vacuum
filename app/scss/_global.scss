@@ -39,4 +39,18 @@ body {
 }
 .title{
     color: #212121;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 30px;
+    max-width: 355px;
+}
+.section{
+  
+  padding: 100px 0 9px;
+}
+.scroll__btn{
+ position: absolute;
+    bottom: 11px;
+    left: 50%;
+    transform: translateX(-50%);
 }

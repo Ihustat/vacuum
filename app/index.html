@@ -13,22 +13,24 @@
 <body>
 <header class="header">
  <div class="container">
-        <div class="logo">
-            <a href="#" class="logo__link">
-                <picture class="logo__img">
-                    <source srcset="images/logo-mini.png" media="(max-width: 600px)">
-                        <img src="images/logo.png" alt="">
-                </picture>
-            </a>
-        </div>
-        <nav class="header__menu">
-            <ul class="header__menu">
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Описание</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">Характеристики</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">отзывы</a></li>
-                <li class="header__menu-item"><a href="#" class="header__menu-link">КУПИТЬ</a></li>
-            </ul>
-        </nav>
+<div class="header__inner">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <picture class="logo__img">
+                        <source srcset="images/logo-mini.png" media="(max-width: 600px)">
+                            <img src="images/logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Описание</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">Характеристики</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">отзывы</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">КУПИТЬ</a></li>
+                </ul>
+            </nav>
+</div>
  </div>
 </header>
 <section class="section about" id="about">
@@ -72,15 +74,15 @@
                 </div>
             </div>
             <div class="description__items">
-                <div class="description__item">
+                <div class="description__item ">
                     <div class="description__item-title">
                         Производительность
                     </div>
-                    <div class="description__item-text">
+                    <div class="description__item-text description__item-text--line">
                         Робот-пылесос обеспечивает качественную сухую уборку в квартире со скоростью 15 квадратных метров в час
                     </div>
                 </div>
-                <div class="description__item">
+                <div class="description__item description__item--4">
                     <div class="description__item-title">
                         Четыре режима работы
                     </div>
@@ -99,24 +101,22 @@
         <div class="features__inner">
             <div class="features__title title">
                 Характеристики и спецификации
-            </div>
-                <div class="features__text">
-                    Производительность уборки - 15 кв.м. в час	
-                    Продолжительность уборки от одного заряда - 20 - 60 мин	
-                    Время заряда аккумулятора - от 10 до 20 мин	
-                    Вместимость пылесборника базовой станции - 2 л	
-                    Вместимость пылесборника аппарата - 0,2 л	
-                    Максимальный уровень шума - 54 дБ	
-                    Максимальная  потребляемая мощность -  600 Вт	
-                    Масса робота-пылесоса - 2 кг
-                    Масса базовой станции - 5,8 кг	
-                    Размеры аппарата (диам. х В) - 285 x 105 мм	
-                    Размеры базовой станции (Д х Ш х В) - 500 x 250 x 230 мм	
                 </div>
+                <ul class="features__list">
+                    <li class="features__list-item"> Производительность уборки - 15 кв.м. в час	</li>
+                    <li class="features__list-item"> Продолжительность уборки от одного заряда - 20 - 60 мин	</li>
+                    <li class="features__list-item"> Время заряда аккумулятора - от 10 до 20 мин	</li>
+                    <li class="features__list-item"> Вместимость пылесборника базовой станции - 2 л	</li>
+                    <li class="features__list-item"> Вместимость пылесборника аппарата - 0,2 л	</li>
+                    <li class="features__list-item"> Максимальный уровень шума - 54 дБ</li>
+                    <li class="features__list-item"> Максимальная  потребляемая мощность -  600 Вт</li>
+                    <li class="features__list-item"> Масса робота-пылесоса - 2 кг</li>
+                    <li class="features__list-item"> Масса базовой станции - 5,8 кг	</li>
+                    <li class="features__list-item"> Размеры аппарата (диам. х В) - 285 x 105 мм	</li>
+                    <li class="features__list-item">  Размеры базовой станции (Д х Ш х В) - 500 x 250 x 230 мм</li>
+                </ul>
+
         </div>
-    </div>
-    <div class="features__image">
-        <img src="images/features-img.png" alt="">
     </div>
 </section>
 
@@ -144,23 +144,23 @@
             </div>
             <div class="contacts__form">
                 <form>
-                    <div class="contacts__line">
+                    <div class="contacts__line contacts__line--reqiured">
                         <div class="contacts__line-title">
                             Имя и фамилия
                         </div>
-                        <input class="contacts__line-input" type="text">
+                        <input class="contacts__line-input" type="text" required>
                     </div>
                     <div class="contacts__line">
                         <div class="contacts__line-title">
                             Электронная почта
                         </div>
-                        <input class="contacts__line-input" type="text">
+                        <input class="contacts__line-input" type="email">
                     </div>
-                    <div class="contacts__line">
+                    <div class="contacts__line contacts__line--reqiured">
                         <div class="contacts__line-title">
                             Телефон
                         </div>
-                        <input class="contacts__line-input" type="text">
+                        <input class="contacts__line-input" type="text" required>
                     </div>
                     <div class="contacts__line">
                         <div class="contacts__line-title">
@@ -223,7 +223,7 @@
            <path fill-rule="evenodd"  fill="rgb(108, 108, 108)"
             d="M6.137,18.993 L2.046,18.993 L2.046,9.498 L0.001,9.498 L0.001,6.225 L2.046,6.225 L2.046,4.261 C2.046,1.592 3.201,0.004 6.479,0.004 L9.209,0.004 L9.209,3.276 L7.504,3.276 C6.226,3.276 6.142,3.734 6.142,4.588 L6.137,6.225 L9.229,6.225 L8.867,9.498 L6.137,9.498 L6.137,18.993 Z"/>
            </svg></a></li>
-           <li class="footer__social-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
+           <li class="footer__social-item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="rgb(108, 108, 108)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a></li>
            <li class="footer__social-item"><a href="#"><svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
