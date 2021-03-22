@@ -1,0 +1,17 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="33.75px" height="23.75px">
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M1.870,7.296 L2.321,6.851 L15.875,20.207 L15.423,20.653 L1.870,7.296 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M31.178,6.851 L31.630,7.296 L18.076,20.653 L17.625,20.207 L31.178,6.851 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M16.750,21.670 L16.043,20.963 L16.750,20.256 L17.457,20.963 L16.750,21.670 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M6.730,2.000 L7.035,1.707 L16.161,10.502 L15.857,10.795 L6.730,2.000 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M26.465,1.707 L26.770,2.000 L17.643,10.795 L17.339,10.502 L26.465,1.707 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="0.5px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(53, 53, 53)"
+ d="M16.750,11.670 L16.043,10.963 L16.750,10.256 L17.457,10.963 L16.750,11.670 Z"/>
+</svg>
