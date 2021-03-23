@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -15,7 +15,7 @@
  <div class="container">
 <div class="header__inner">
             <div class="logo">
-                <a href="#" class="logo__link">
+                <a href="#about" class="logo__link">
                     <picture class="logo__img">
                         <source srcset="images/logo-mini.png" media="(max-width: 600px)">
                             <img src="images/logo.png" alt="">
@@ -24,14 +24,18 @@
             </div>
             <nav class="header__menu">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Описание</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Характеристики</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">отзывы</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">КУПИТЬ</a></li>
+                    <div class="line"></div>
+                    <li class="header__menu-item "><a href="#about" class="header__menu-link menu-item-1">
+                       Главная</a></li>
+                    <li class="header__menu-item "><a href="#description" class="header__menu-link menu-item-2">Описание</a></li>
+                    <li class="header__menu-item "><a href="#features" class="header__menu-link menu-item-3">Характеристики</a></li>
+                    <li class="header__menu-item "><a href="#reviews" class="header__menu-link menu-item-4">отзывы</a></li>
+                    <li class="header__menu-item "><a href="#contacts" class="header__menu-link menu-item-5">КУПИТЬ</a></li>
                 </ul>
             </nav>
-</div>
  </div>
+</div>
+ 
 </header>
 <section class="section about" id="about">
     <div class="container">
@@ -52,14 +56,14 @@
             </div>
         </div>
     </div>
-    <div class="scroll__btn">
-        <div class="scroll__mouse">
+    <a href="#description" class="scroll__btn">
+        <div class="scroll__mouse ">
             <img src="images/mouse.svg" alt="">
         </div>
-        <div class="scroll__arrows">
+        <div class="scroll__arrows animate__animated animate__bounce animate__infinite  " >
             <img src="images/arrows.svg" alt="">
         </div>
-    </div>
+    </a>
 </section>
                               
 <section class="section description" id="description">
@@ -123,7 +127,115 @@
 
 <section class="section reviews" id="reviews">
     <div class="container">
-
+    <div class="slider-for">
+        <div class="slider-for__item">
+            <div class="slider-for__inner">
+                <span></span>
+                <div class="slider-for__text">
+                    Очень хороший помощник в доме, убирает все начисто. Оставляю его на целый день, при этом заранее подготовив комнаты и ухожу. Возвращаясь домой - квартира вся чистая!
+                </div>
+            </div>
+        </div>
+        <div class="slider-for__item">
+            <div class="slider-for__inner">
+                <div class="slider-for__text">
+                   prikol
+                </div>
+            </div>
+        </div>
+        <div class="slider-for__item">
+            <div class="slider-for__inner">
+                <span></span>
+                <div class="slider-for__text">
+                   klass
+                </div>
+            </div>
+        </div>
+        <div class="slider-for__item">
+            <div class="slider-for__inner">
+                <span></span>
+                <div class="slider-for__text">
+                    awesome
+                </div>
+            </div>
+        </div>
+        <div class="slider-for__item">
+            <div class="slider-for__inner">
+                <span></span>
+                <div class="slider-for__text">
+                   pris
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-nav">
+        
+        <div class="slider-nav__item">
+            <div class="slider-nav__inner">
+               <div class="slider-nav__wrapper"> 
+                   <div class="slider-nav__image" style="background-image: url(images/slider-1.jpg);"></div>
+                </div >
+                <div class="slider-nav__name">
+                    Олег Фролов
+                </div>
+                <div class="slider-nav__position">
+                    Покупатель
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav__item">
+            <div class="slider-nav__inner">
+                <div class="slider-nav__wrapper"> 
+                    <div class="slider-nav__image" style="background-image: url(images/slider-2.jpg);"></div>
+                 </div >
+                <div class="slider-nav__name">
+                    Олег Фролов
+                </div>
+                <div class="slider-nav__position">
+                    Покупатель
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav__item">
+            <div class="slider-nav__inner">
+                <div class="slider-nav__wrapper"> 
+                    <div class="slider-nav__image" style="background-image: url(images/slider-3.jpg);"></div>
+                 </div >
+                <div class="slider-nav__name">
+                    Олег Фролов
+                </div>
+                <div class="slider-nav__position">
+                    Покупатель
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav__item">
+            <div class="slider-nav__inner">
+                <div class="slider-nav__wrapper"> 
+                    <div class="slider-nav__image" style="background-image: url(images/slider-4.jpg);"></div>
+                 </div >
+                <div class="slider-nav__name">
+                    Олег Фролов
+                </div>
+                <div class="slider-nav__position">
+                    Покупатель
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav__item">
+            <div class="slider-nav__inner">
+                <div class="slider-nav__wrapper"> 
+                    <div class="slider-nav__image" style="background-image: url(images/slider-5.jpg);"></div>
+                 </div >
+                <div class="slider-nav__name">
+                    Олег Фролов
+                </div>
+                <div class="slider-nav__position">
+                    Покупатель
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 

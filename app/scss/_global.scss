@@ -1,5 +1,6 @@
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -45,8 +46,8 @@ body {
     max-width: 355px;
 }
 .section{
-  
-  padding: 100px 0 9px;
+ padding-top: 100px;
+ 
 }
 .scroll__btn{
  position: absolute;

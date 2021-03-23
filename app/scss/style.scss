@@ -12,16 +12,18 @@
     z-index: 5;
     background-color: #fff;
     &__inner{
-      
         height: 90px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+      
     }
+  
     &__menu-list{
-        display: flex;
+      position: relative;
     }
     &__menu-item{
+        display: inline-block;
         margin-left: 60px;
     }
     &__menu-link{
@@ -29,8 +31,16 @@
        @extend %roboto;
         text-transform: uppercase;
         transition: all .3s;
+       
+        position: relative;
+   &.active{
+    color: $yellow;
+
+   }
         &:hover{
             color: $yellow;
+    
+         
         }
     }
 }
@@ -47,9 +57,7 @@
     &__content{
         max-width: 480px;
     }
-    &__title{
-      
-    }
+   
     &__text{
        
             line-height: 34px;
@@ -80,13 +88,18 @@
         }
     }
 }
+.scroll__arrows{
+    padding-top: 25px;
+}
+
 // end about
 // start description
 .description{
     &__inner{
+      padding: 50px 50px 0;
         display: flex;
         justify-content: space-between;
-        padding: 185px 0 180px;
+      
     }
     &__content{
         max-width: 403px;
@@ -153,8 +166,9 @@ position: relative;
     background-image: url(../images/features-img.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center right;
+    background-position: right 180px;
     &__inner{
+        padding: 50px 0 100px;
        padding-left: 150px;
     }
     &__list{
@@ -165,10 +179,114 @@ position: relative;
     }
 }
 // end features
+// start reviews
+.reviews{
+    padding: 135px 0;
+}
+.slider-for{
+    margin-bottom: 88px;
+    &__inner{
+    
+        position: relative;
+        padding-top: 92px;
+        &::before{
+            content: "⸲⸲";
+            position: absolute;
+            font-size: 100px;
+            color: $yellow;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__text{
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 36px;
+        line-height: 46px;
+        color: $black;
+    }
+}.slider-nav{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #e8e9ed;
+        bottom: 72px;
+        z-index: -1;
+    }
+    &__item{
+        cursor: pointer;
+    }
+    &__inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__wrapper{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    &__image{
+      margin: 0 auto;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 65px;
+        border-radius: 50%;
+  
+        transition: all .5s;
+        height: 65px;
+     
+
+    }
+    &__name{
+        padding-top: 20px;
+        font-size: 22px;
+        color: $black;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            top: -3px;
+            width: 0;
+            height: 3px;
+            background-color: transparent;
+           left: 0;
+            transition: all .3s;
+          margin: auto;
+        }
+    }
+    &__position{
+        @extend %roboto;
+    }
+}
+.slick-slide.slick-current.slick-center{
+    .slider-nav__name{
+        &::before{
+            
+            background-color: #f9593a;
+            width: 117px;
+            left: -13px;
+            right: 0;
+        }
+    }
+    .slider-nav__image{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+// end reviews
 // start contacts
 .contacts{
     padding-bottom: 148px;
     &__inner{
+        padding-top: 50px;
         display: flex;
       
     }
@@ -224,9 +342,10 @@ position: relative;
     outline: none;
     font-size: 13px;
     color: $black;
-    &::placeholder{
-        padding: 10px 0;
-    }
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  
 }
 &__form-info{
     display: inline-block;
