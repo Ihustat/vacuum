@@ -12,6 +12,16 @@ $(function(){
   //     indicator(e.target);
   //   })
   // })
+  wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  new WOW().init();
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -57,7 +67,7 @@ $(function(){
       
       $('html, body').animate({
         scrollTop: $(id).offset().top - nav_height
-      }, 500);
+      }, 1000);
       
       return false;
     });       
