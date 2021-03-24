@@ -21,6 +21,7 @@
   
     &__menu-list{
       position: relative;
+
     }
     &__menu-item{
         display: inline-block;
@@ -44,7 +45,13 @@
         }
     }
 }
-
+.header .hamburger{
+    display: none;
+}
+.logo{
+    position: relative;
+    z-index: 5;
+}
 // end header
 // start about
 .about{
@@ -88,8 +95,10 @@
         }
     }
 }
+
 .scroll__arrows{
     padding-top: 25px;
+  
 }
 
 // end about
@@ -119,10 +128,10 @@
            border-radius: 50%;
            left: 0;
            top: -17px;
-          
+          z-index: -1;
        }
        &::after{
-           content:url('../images/watch.png');
+           content:"";
            position: absolute;
            left: 14px;
            top: -20px;
@@ -145,6 +154,13 @@
     top: -13px;
     }
 }
+}
+.description__item--watch::after{
+    background-image: url(../images/watch.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: cover;
+   
 }
 .description__item-text--line{
 padding-bottom: 28px;
@@ -310,6 +326,7 @@ position: relative;
 display: flex;
 margin-bottom: 45px;
 position: relative;
+padding-right: 10px;
 
 }
 &__line--reqiured{

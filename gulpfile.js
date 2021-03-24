@@ -59,6 +59,7 @@ function styles() {
         'app/scss/style.scss',
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/hamburgers/dist/hamburgers.css',
         'node_modules/animate.css/animate.css',
        
     ])

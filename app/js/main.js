@@ -17,7 +17,7 @@ $(function(){
     boxClass:     'wow',      // default
     animateClass: 'animated', // default
     offset:       0,          // default
-    mobile:       true,       // default
+    mobile:       false,       // default
     live:         true        // default
   }
   )
@@ -36,7 +36,48 @@ $(function(){
         asNavFor: '.slider-for',
         dots: true,
         centerMode: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 921,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows:false,
+            }
+          }, {
+            breakpoint: 750,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows:false,
+            }
+          },
+          {
+            breakpoint: 630,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows:false,
+            }
+          },
+          {
+            breakpoint: 460,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows:false,
+            }
+          },
+        ]
       });
 
 
@@ -71,5 +112,24 @@ $(function(){
       
       return false;
     });       
-
+    var mywindow = $(window);
+    var mypos = mywindow.scrollTop();
+    mywindow.on('scroll',function() {
+        if(mywindow.scrollTop() > mypos)
+        {
+            $('.scroll__btn').fadeOut();  
+        }
+        else
+        {
+            $('.scroll__btn').fadeIn();
+        }
+        mypos = mywindow.scrollTop();
+     });
+     $('.hamburger').on('click', function(){
+      $('.hamburger').toggleClass('is-active');
+      $('.header__menu').toggleClass('open');
+     });
+     $('.header__menu-link').on('click',function(){
+      $('.header__menu').removeClass('open');
+     });
 });
